@@ -25,13 +25,24 @@
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
+                Prima App
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="{% url 'prima_app:homepage'%}">Homepage</a>
+                <a class="dropdown-item" href="{% url 'prima_app:welcome'%}">Welcome</a>
+                <a class="dropdown-item" href="{% url 'prima_app:lista'%}">Lista</a>
+                <a class="dropdown-item" href="{% url 'prima_app:chi_siamo'%}">Chi Siamo</a>
+                <a class="dropdown-item" href="{% url 'prima_app:variabili'%}">Variabili</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Seconda App
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{% url 'seconda_app:es_if'%}">Ese_If</a>
+                <a class="dropdown-item" href="{% url 'seconda_app:es_for'%}">Ese_For</a>
+                
               </div>
             </li>
             <li class="nav-item">
