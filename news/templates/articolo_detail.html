@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% extends 'base.html' %}
+
+    {% block title %}
+        {{ articolo.titolo}}
+    {% endblock title %}
+    
+    {% block content %}
+        <h1>{{ articolo.titolo}}</h1>
+        <h3>{{ articolo.contenuto}}</h3>
+        <h5>Autore: {{ articolo.giornalista }}</h5>
+    {% enblock content %}
+</body>
+</html>
